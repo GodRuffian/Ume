@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="64dp"
+        android:layout_gravity="center" />
+   <EditText
+       android:id="@+id/username"
+       android:layout_width="300dp"
+       android:layout_height="60dp"
+       android:hint="用户名/手机/账号"
+       android:maxLines="1"
+       android:textSize="20sp"
+       android:textColor="@color/colorPrimaryDark"
+       android:layout_gravity="center"
+       android:layout_marginTop="22dp"
+       android:paddingLeft="32dp"/>
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="密码"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:paddingLeft="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Ume"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/loginBtnBg"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
