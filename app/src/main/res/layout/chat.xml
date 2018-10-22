@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground">
+
+    <LinearLayout android:id="@+id/chat_u">
+        <ImageView
+            android:id="@+id/chat_u_headurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headurl"
+            android:maxWidth="46dp"
+            android:maxHeight="46dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_left">
+            <TextView
+                android:id="@+id/chat_u_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="U are so beautiful"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/chat_me">
+        <ImageView
+            android:id="@+id/chat_me_headurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headurl"
+            android:maxWidth="46dp"
+            android:maxHeight="46dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_left">
+            <TextView
+                android:id="@+id/chat_me_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Me I am very happy"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</linearLayout>
