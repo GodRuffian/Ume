@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,20 +10,49 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--<include layout="@layout/main_title" />-->
-    <LinearLayout
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:menu="@menu/main"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:id="@+id/toolbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="消息"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+        </android.support.v7.widget.Toolbar>
+    </FrameLayout>
+
+
+       <!--<android.support.design.widget.BottomNavigationView
+           android:id="@+id/bottom_nav"
+           android:layout_width="match_parent"
+           android:layout_height="56dp"
+           android:layout_alignParentBottom="true"
+           android:background="@color/colorAccent"
+           app:itemIconTint="@color/mainBackground"
+           app:itemTextColor="@color/mainBackground"
+           app:menu="@menu/bottom_nav" />-->
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/message_left">
+        android:text="sidebar"
+        android:layout_gravity="start"
+        android:textSize="30sp"
+        android:background="#FFF"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="哈哈哈哈哈大大家啊里点击啊，大家都垃圾的垃圾的，大量的骄傲大垃圾袋大家都来骄傲来的ad的杰拉德al"
-            android:textColor="#000000"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-
-</LinearLayout>
+</android.support.v4.widget.DrawerLayout>
