@@ -4,10 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBackground"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -22,7 +22,7 @@
             android:layout_alignParentStart="true"
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:menu="@menu/main"
+            app:menu="@menu/main_toolbar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
             <TextView
@@ -38,21 +38,26 @@
 
 
        <!--<android.support.design.widget.BottomNavigationView
-           android:id="@+id/bottom_nav"
+           android:id="@+id/main_bottom_nav"
            android:layout_width="match_parent"
            android:layout_height="56dp"
            android:layout_alignParentBottom="true"
            android:background="@color/colorAccent"
            app:itemIconTint="@color/mainBackground"
            app:itemTextColor="@color/mainBackground"
-           app:menu="@menu/bottom_nav" />-->
+           app:menu="@menu/main_bottom_nav" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sidebar"
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_navigate_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:textSize="30sp"
-        android:background="#FFF"/>
+        app:menu="@menu/sidebar"
+        app:headerLayout="@layout/main_sidebar_head"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </android.support.v4.widget.DrawerLayout>

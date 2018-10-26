@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_listitem_headurl"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/headurl"
+            android:layout_gravity="center"
+            android:contentDescription="头像"
+            />
+        <TextView
+            android:id="@+id/chat_listitem_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sweet"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/chat_listitem_headurl"
+            android:layout_marginLeft="16dp"
+            />
+        <TextView
+            android:id="@+id/chat_listiem_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chat_listitem_headurl"
+            android:layout_marginLeft="16dp"
+            android:layout_alignBottom="@+id/chat_listitem_headurl"
+            android:text="在吗?"
+            />
+        <TextView
+            android:id="@+id/chat_listiem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-10-27 16:22:11"
+            android:layout_toRightOf="@+id/chat_listitem_username"
+            android:layout_marginLeft="80dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+</RelativeLayout>
