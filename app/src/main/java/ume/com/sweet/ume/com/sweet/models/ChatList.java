@@ -1,13 +1,20 @@
 package ume.com.sweet.ume.com.sweet.models;
 
-public class Chat {
+public class ChatList {
 
-    private int id;
+    private long id;
     private String headurl;
-    private int createTime;
+    private long createTime;
     private String msg;
 
-    public int getId() {
+    public ChatList(long id, String headurl, long createTime, String msg) {
+        this.id = id;
+        this.headurl = headurl;
+        this.createTime = createTime;
+        this.msg = msg;
+    }
+
+    public long getId() {
         return id;
     }
 
@@ -23,7 +30,7 @@ public class Chat {
         this.headurl = headurl;
     }
 
-    public int getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
